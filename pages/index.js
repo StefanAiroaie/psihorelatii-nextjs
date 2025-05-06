@@ -1,5 +1,8 @@
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/Header"
+import PageArticle from "@/components/PageArticle"
+
+import sanity from "../lib/sanity"; // folosește clientul
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,9 +14,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function Home() {
+const catSlug = "/relatii"
+
+
+export async function getStaticProps() {
+  const data = await sanity.fetch(
+    `*[_type == "psrCategoryPage" && slug.current == "relatii"][0]`,
+  );
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+
+export default function Home({ data }) {
   return (
     <>
+      <Header />
+      <PageArticle data={data} catSlug={catSlug} />
 
 
       <div className="bg-gray-500 px-6 py-24 sm:py-32 lg:px-8">
