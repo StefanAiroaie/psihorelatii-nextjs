@@ -6,23 +6,23 @@
 // Navigation
 export const navigation = {
     header: [
-        { name: 'Intrebari Frecvente', href: '/faq/' },
-        { name: 'Glosar de termeni', href: '/glosar/' },
+        { name: 'Intrebari Frecvente', href: '/faq' },
+        { name: 'Glosar de termeni', href: '/glosar' },
         // { name: 'Blog', href: '/blog' },
 
     ],
 
     legal: [
-        { name: 'Termeni și condiții', href: '/legal/termeni-conditii/' },
-        { name: 'Politica de confidențialitate', href: '/legal/politica-confidentialitate/' },
-        { name: 'Politica de cookie-uri', href: '/legal/politica-cookie/' },
-        { name: 'Declinarea responsabilității', href: '/legal/disclaimer/' },
-        { name: 'Despre noi', href: '/legal/despre-noi/' },
-        { name: 'Contact', href: '/contact/' },
+        { name: 'Termeni și condiții', href: '/legal/termeni-conditii' },
+        { name: 'Politica de confidențialitate', href: '/legal/politica-confidentialitate' },
+        { name: 'Politica de cookie-uri', href: '/legal/politica-cookie' },
+        { name: 'Declinarea responsabilității', href: '/legal/disclaimer' },
+        { name: 'Despre noi', href: '/legal/despre-noi' },
+        { name: 'Contact', href: '/contact' },
     ],
 
     categories: [
-        { name: 'Relații', href: '/relatii/', articles: 5 },
+        { name: 'Relații', href: '/relatii', articles: 5 },
         //     { name: 'Despărțiri', href: '/despartiri', articles: 5 },
         //     { name: 'Comunicare', href: '/comunicare', articles: 5 },
         //     { name: 'Iubire Conștientă', href: '/iubire-constienta', articles: 5 },

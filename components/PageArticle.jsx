@@ -56,11 +56,11 @@ const PageArticle = ({ data, catSlug }) => {
         "dateModified": data?.modifiedDate || "2025-03-21T00:08:00+01:00",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `${globalSettings.domainName}/${catSlug}/${data?.slug?.current || ''}`,
+            "@id": `${globalSettings?.domainName}/${catSlug}/${data?.slug?.current || ''}`,
         },
         "image": {
             "@type": "ImageObject",
-            "url": `${globalSettings.domainName}/${heroImgSrc}`,
+            "url": `${globalSettings?.domainName}/${heroImgSrc}`,
         },
     };
 
@@ -246,7 +246,7 @@ const PageArticle = ({ data, catSlug }) => {
                                     <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
                                 </svg>
                                 <a href={`/${catSlug}`} className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
-                                    {catSlug.charAt(0).toUpperCase() + catSlug.slice(1)}
+                                    {catSlug?.charAt(0).toUpperCase() + catSlug?.slice(1)}
                                 </a>
                             </div>
                         </li>

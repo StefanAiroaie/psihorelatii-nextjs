@@ -41,7 +41,7 @@ export default function PageCategory({ posts, catSlug }) {
                                     </div>
                                         <div className="group relative max-w-xl">
                                             <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                                                <a href={`/${catSlug}/${post?.slug?.current}/`} aria-label={`Deschide articolul: ${post?.title}`}>
+                                                <a href={`/relatii/${post?.slug?.current}`} aria-label={`Deschide articolul: ${post?.title}`}>
                                                     <span className="absolute inset-0" />
                                                     {post?.title}
                                                 </a>
